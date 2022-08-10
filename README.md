@@ -2,3 +2,5 @@
 Shit Chip-8 Emulator, based on F# version by/from https://github.com/raulbojalil/chip-f 
 
 Re-de-obfuscated and re-de-compiled many times... (Fucked and raped code)
+
+![image](https://user-images.githubusercontent.com/2005369/183994683-84248f8a-be9b-483f-a028-128fe4afb32d.png)
