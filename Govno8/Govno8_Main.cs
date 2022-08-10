@@ -70,7 +70,7 @@ internal static class Govno8_Main
 		CommonExtensions.AddToObservable<PaintEventArgs>(Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.CreateEvent<PaintEventHandler, PaintEventArgs>(Govno8.Class12.class12_0, Govno8.Class13.class13_0, Govno8.Class15.class15_0), Govno8.Class16.class16_0);
 		CommonExtensions.AddToObservable<KeyEventArgs>(Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.CreateEvent<KeyEventHandler, KeyEventArgs>(Govno8.Class17.class17_0, Govno8.Class18.class18_0, Govno8.Class20.class20_0), Govno8.Class21.class21_0);
 		CommonExtensions.AddToObservable<KeyEventArgs>(Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.CreateEvent<KeyEventHandler, KeyEventArgs>(Govno8.Class22.class22_0, Govno8.Class23.class23_0, Govno8.Class25.class25_0), Govno8.Class26.class26_0);
-		Govno8.Form.Text = string.Format("{0} - Chip-F Emulator", Govno8.RomName);
+		Govno8.Form.Text = string.Format("{0} - Chip-8 Emulator", Govno8.RomName);
 		Govno8.Form.MaximizeBox = false;
 		Govno8.Form.FormBorderStyle = FormBorderStyle.FixedSingle;
 		Application.Run(Govno8.Form);
