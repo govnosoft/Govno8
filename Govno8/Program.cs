@@ -2,10 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Threading;
-
 namespace Govno8;
-
 internal static class Program
 {
 	[STAThread]
@@ -20,7 +17,6 @@ internal static class Program
 		currentProcess.PriorityClass = ProcessPriorityClass.High;
 		Console.BackgroundColor = ConsoleColor.Black;
 		Console.ForegroundColor = ConsoleColor.White;
-
 		try
 		{
 			Govno8_Main.Mein();
@@ -33,7 +29,6 @@ internal static class Program
 				{
 					streamWriter.WriteLine(value);
 				}
-
 			}
 			catch
 			{

@@ -1,16 +1,13 @@
-﻿using System;
+﻿using Microsoft.FSharp.Collections;
+using Microsoft.FSharp.Control;
+using Microsoft.FSharp.Core;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
-using Microsoft.FSharp.Collections;
-using Microsoft.FSharp.Control;
-using Microsoft.FSharp.Core;
-using Microsoft.FSharp.Core.CompilerServices;
-
 namespace Govno8;
-
 internal static class Govno8_Main
 {
 	public static void Mein()
