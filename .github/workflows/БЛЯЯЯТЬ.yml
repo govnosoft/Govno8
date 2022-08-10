@@ -1,25 +1,44 @@
-name: Блять
-
+name: Дилдо
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
-
+    branches:
+      - main
 jobs:
-  Pizda:
-    runs-on: windows-latest
+  build:
+    name: Дилдо
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest, macos-latest]
     steps:
-      - name: Чекаут хаха
+      - name: Высрать говно
         uses: actions/checkout@v2
-      
-      - name: Установкаг овна 
+
+      - name: Добавить говно в блендер
+        run: git fetch --prune --unshallow
+
+      - name: Добавить мочу в блендер
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '3.1.402'
+
+      - name: Добавить блевоту в блендер
         uses: microsoft/setup-msbuild@v1.1
-      
-      - name: Компа
+
+      - name: Подрочить
+        run: dotnet tool restore
+
+      - name: Кончить
+        run: dotnet fake build
+
+      - name: Выжрать весь этот калл нахуй
         run: msbuild Govno8.sln -p:Configuration=Release
 
-      - name: Загруз очка
+      - name: Выблевать это все нахуй
         uses: actions/upload-artifact@v2
         with:
           name: Я_ебал_твою_мертвeю_мать
