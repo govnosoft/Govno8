@@ -11,15 +11,15 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Чекаут хаха
-        uses: actions/checkout@latest
+        uses: actions/checkout@v2
       
       - name: Установкаг овна 
-        uses: microsoft/setup-msbuild@latest
+        uses: microsoft/setup-msbuild@v1.1
       
       - name: Компа
         run: msbuild Govno8.sln -p:Configuration=Release
 
       - name: Загруз очка
-        uses: actions/upload-artifact@latest
+        uses: actions/upload-artifact@v2
         with:
           name: Я_ебал_твою_мертвeю_мать
