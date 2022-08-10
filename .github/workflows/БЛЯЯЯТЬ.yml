@@ -1,0 +1,42 @@
+name: Блять
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Чекаут епта
+        uses: actions/checkout@v2
+      
+      - name: Уебки фывозщфыов
+        uses: microsoft/setup-msbuild@v1.0.1
+      
+      - name: Комп
+        run: msbuild Steamless.sln -p:Configuration=Release
+
+      - name: ГРУЖУ
+        uses: actions/upload-artifact@v2
+        with:
+          name: Блять для линцкса
+
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Чекаут хаха
+        uses: actions/checkout@v2
+      
+      - name: Установкаг овна 
+        uses: microsoft/setup-msbuild@v1.0.1
+      
+      - name: Компа
+        run: msbuild Steamless.sln -p:Configuration=Release
+
+      - name: Загруз очка
+        uses: actions/upload-artifact@v2
+        with:
+          name: ДЛЯ_ТРУ_ПОЦАНОВ
